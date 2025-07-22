@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   root "inverter_logs#index"
 
   get "inverterLogs", to: "inverter_logs#index"
+  post "importInverterLogs", to: "inverter_logs#import"
 end
