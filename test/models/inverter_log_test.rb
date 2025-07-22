@@ -32,4 +32,15 @@ class InverterLogTest < ActiveSupport::TestCase
     assert_equal 4, logs41.length
     assert_equal 5, logs42.length
   end
+
+  test "should return all unique days of log in ascendent order" do
+    many_csv = fixture_file_upload "inverters_many.csv", "text/csv"
+    InverterLog.import_csv(many_csv)
+
+    all_days = InverterLog.all_unique_days
+
+    assert_equal 2, all_days.length
+    assert_equal Date.parse("2025-07-21"), all_days[0]
+    assert_equal Date.parse("2025-07-22"), all_days[1]
+  end
 end

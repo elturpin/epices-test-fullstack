@@ -10,4 +10,9 @@ class InverterLog < ApplicationRecord
       InverterLog.create!(row.to_h)
     end
   end
+
+  def self.all_unique_days
+    all_datetime = InverterLog.select(:datetime).distinct.order(datetime: :asc).pluck(:datetime)
+    all_datetime.map { | dateTime | dateTime.to_date }.uniq
+  end
 end

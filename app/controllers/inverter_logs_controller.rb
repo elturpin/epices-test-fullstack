@@ -1,5 +1,7 @@
 class InverterLogsController < ApplicationController
   def index
+    @number_of_logs = InverterLog.count
+    @all_days = InverterLog.all_unique_days
   end
 
   def import

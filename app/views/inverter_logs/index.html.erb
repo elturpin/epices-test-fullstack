@@ -1,2 +1,15 @@
 <h1>InverterLogs#index</h1>
-<p>Find me in app/views/inverter_logs/index.html.erb</p>
+
+<%= form_tag importInverterLogs_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import CSV Logs" %>
+<% end %>
+
+<p>Total of logs : <%= @number_of_logs %></p>
+
+<p>Number of days <%= @all_days.length %></p>
+<% @all_days.each do | day | %>
+    <div>
+        <%= day %>
+    </div>
+<% end %>
