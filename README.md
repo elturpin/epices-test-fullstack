@@ -1,3 +1,15 @@
+# Retour personnel de développement
+Je n'ai jamais fait de ruby et a fortiori utilisé RubyOnRails avant ce test technique. J'ai donc fait un rapide tuto ruby avant le test et j'ai lu le guide de démarrage de Rails avant et pour m'aider dans cet exercice.
+
+J'avoue que l'exercice a vraiment été très dur pour moi (je ne l'ai pas fini). Je suis plus habitué à des syntaxes de type C/C++, JS/TS ou Python. Ce qui m'a beaucoup manqué, c'est le typage.
+
+L'exercice a aussi été très frustrant car j'ai eu beaucoup de mal à comprendre les documentations et surtout quand je lis trop de fois que le langage/le framework est construit pour être "amusant" alors que j'ai juste beaucoup galéré, cela m'a plus énervé qu'autre chose. La complexité reste complexe quoi qu'il arrive, c'est mieux de ne pas le cacher.
+
+# Ce qui a été fait
++ Ajout d'une config de conteneur de développement (pour ne pas installer trop de chose sur son ordinateur)
++ Ajout d'une fonctionnalité d'import de fichier CSV pour enregistrer les log d'onduleur (*inverter*)
++ Affichage du nombre de log et des jours distincts. Il s'agit de la route racine
+
 # Sujet
 
 Une [centrale solaire photovoltaïque](https://fr.wikipedia.org/wiki/Centrale_solaire_photovolta%C3%AFque) dispose d'un appareil appelé [datalogger](https://en.wikipedia.org/wiki/Data_logger) qui nous transmet chaque jour des données de production d'énergie.
